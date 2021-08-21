@@ -13,11 +13,11 @@ public class Controller {
 		Controller.password = password;
 	}
 	
-	public static Connection connectToSQL(String username, String password) {
+	public static Connection connectToSQL(String url, String username, String password) {
 		// TODO: Clear credentials
-		String url = "jdbc:oracle:thin:@artemis.vsnet.gmu.edu:1521/vse18c.vsnet.gmu.edu";
-		username = username == null ? "nebssa" : username;
-		password = password == null ? "oosejooj" : password;
+		url = url == null ? "*omitted*" : url;
+		username = username == null ? "*omitted*" : username;
+		password = password == null ? "*omitted*" : password;
 		
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
